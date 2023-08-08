@@ -1,0 +1,92 @@
+<div style="position: fixed;  z-index: 2;">
+    <app-header></app-header>
+    <div>
+        <app-moving-box></app-moving-box>
+    </div>
+</div>
+<div class="main">
+    <div class="background">
+        <div class="title">
+            <p id="sub-title">
+                The main <br>page with<br>heading
+            </p>
+            <p id="sub-title2">Inspiring gym apparel for athletes and fitness enthusiasts.<br>
+                Push your limits, surpass your goals, move forward.</p>
+            <button>Shop now</button>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="card-title">
+            <div style="height: 10vh; display: flex; justify-content: space-between;">
+                <p id="sub-title3">Categories</p>
+                <div style="margin-right: 5vw; margin-top: 3.5vh;">
+                    <img (click)="scrollCards('left')" src="./assets/arrowleft.svg">
+                    <img (click)="scrollCards('right')" style="padding-left: 1vw;" src="./assets/arrowright.svg">
+                </div>
+            </div>
+            <div class="total-cards">
+                <div #card class="card-slider">
+                    <div class="card" *ngFor="let card of cards">
+                        <img class="img" [src]="card.imageUrl" />
+                        <div class="title">
+                            <div class="title2">
+                                <span class="span1">{{ card.title }}</span>
+                                <span class="span2">{{ card.title2 }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Explore">
+            <p id="sub-title4">Explore</p>
+            <div style="width:95vw; display: flex;padding-left: 4vw;">
+                <div class="img1">
+                    <div style="margin-top: 60vh;padding-left: 3vw;">
+                        <p id="sub-title5">
+                            Shop by Individual Items
+                        </p>
+                        <button>Shop now</button>
+                    </div>
+                </div>
+                <div class="img2">
+                    <div style="margin-top: 65vh;margin-left: 3vw;">
+                        <p id="sub-title5">
+                            Shop by Kits
+                        </p>
+                        <button>Shop now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="rating">
+            <div style="padding:40px 0 0 42px; margin-top: 2vh;color: #000;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 33.6px; /* 140% */
+            letter-spacing: -0.5px;">
+                What our customers are saying
+            </div>
+            <div class="review">
+                <div class="box1" *ngFor="let rating of ratings">
+                    <p id="sub-title6">{{rating.para1}}</p>
+                    <img [src]="rating.img" />
+                    <p id="sub-title7">{{rating.para2}}</p>
+                </div>
+            </div>
+            <div class="newsletter">
+                <p id="sub-title8">Sign up for our newsletter</p>
+                <p id="sub-title9">Sign up to get the latest offers, new collection drops, newsletters, and more helpful
+                    info.</p>
+                <div style="display:flex; gap:8px;">
+                    <input type="text" id="email" name="email" placeholder="you@email.com" />
+                    <a class="signup">Signup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

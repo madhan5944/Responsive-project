@@ -1,0 +1,39 @@
+.scrolling-text {
+    
+   
+    width: 100vw;
+    height: 6vh;
+    background-color: black;
+    color:white;
+    overflow: hidden;
+}
+  
+  .scrolling-text p {
+    white-space: nowrap;
+
+      width: 100vw;
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
+  
+    color: #FFF;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 15px; /* 100% */
+letter-spacing: 1px;
+text-transform: uppercase;
+
+  }
+  
+  @keyframes scrollText {
+    0% {
+        transform: translateX(-100%);
+      }
+    
+      200% {
+        transform: translateX(100%);
+      }
+  }
+  
+  
