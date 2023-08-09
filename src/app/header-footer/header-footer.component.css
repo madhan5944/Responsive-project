@@ -1,0 +1,115 @@
+.main-box{
+    width: 100vw;
+    height:auto ;
+}
+.header{
+    width: 100vw;
+    height: 10vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content:space-between;
+align-items: flex-start;
+
+}
+.logo-title{
+    display: flex;
+    padding-left: 2vw;
+    gap:8px
+}
+#p1{
+    color: #000;
+font-family: Average Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 100% */
+letter-spacing: 7px;
+text-transform: uppercase;
+}
+.bag{
+   
+   margin-top: -1.5vh;
+   border-radius: 99px;
+   background: #F5F5F5;
+   display: inline-flex;
+padding: 12px;
+justify-content: center;
+align-items: flex-start;
+
+}
+.right{
+  display: flex;
+  
+  padding:30px 35px 0 0 ;
+}
+#FAQs{
+    color: #000;
+font-family: 'Inter';
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px;
+padding-right: 4vh;
+}
+#contact{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    padding-right: 2vh;
+}
+.footer{
+width:100vw;
+height:50vh;
+border-top: 1px solid #E3E3E3;
+
+}
+.mid-foot{
+   
+    
+    display: flex;
+   
+  
+}
+.mid-left{
+    width:70vw;
+    display: flex;
+    gap:5vw;
+    color: #000;
+    font-family: 'Inter';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.8px;
+padding-top: 10vh;
+padding-left: 2vw;
+}
+.mid-right{
+    width:30vw;
+    color: #000;
+font-family: 'Inter';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 25.2px; 
+
+padding-top: 7vh;
+
+}
+.end-foot{
+      padding-left: 2vw;
+    display: flex;
+    padding-top: 8vh;
+  
+}
+.payment{
+    width: 35px;
+    height: 24px;
+    
+    gap:1vw;
+    display: flex;
+    margin-left: 60vw;
+    width: fit-content;
+}
